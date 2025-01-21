@@ -58,13 +58,15 @@ publisher = Publisher()
 # Creating instances of Subscribers with unique names
 subscriber_1 = Subscriber("Subscriber 1")
 subscriber_2 = Subscriber("Subscriber 2")
+subscriber_3 - Subscriber("suffolk")
 
 # Subscribing the two subscribers to the publisher
 publisher.subscribe(subscriber_1)  # Adding subscriber_1 to the publisher's subscribers list
 publisher.subscribe(subscriber_2)  # Adding subscriber_2 to the publisher's subscribers list
+publisher.subscribe(subscriber_3)
 
 # Publishing a message to all subscribers
-publisher.publish("Hello World")  # This will send "Hello World" to both subscribers
+publisher.publish("I play Pokemon Go everyday")  # This will send "Hello World" to both subscribers
 
 ## TASKS:
 
